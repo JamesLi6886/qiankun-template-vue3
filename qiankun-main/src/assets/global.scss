@@ -1,0 +1,183 @@
+// 公共样式
+.green-color {
+  color: #5cb6ff !important;
+}
+.yellow-color {
+  color: #fecd2e !important;
+}
+.grey-color {
+  color: #909399;
+}
+.blue-color {
+  color: #0085FF !important;
+}
+.white-color {
+  color: white !important;
+}
+
+.text-align-right {
+  text-align: right;
+}
+.text-align-left {
+  text-align: left;
+}
+.text-align-center {
+  text-align: center;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+.cursor-pointer {
+  cursor: pointer;
+};
+
+@for $i from 12 through 30 { // 例如 fs-12 相当于 font-size: 12px;
+  .fs-#{$i} {
+    font-size: $i+px !important;
+  }
+}
+
+@for $i from 0 through 20 { // 例如 width-300 相当于 width: 300px;
+  .width-#{$i*50} {
+    width: $i*50+px !important;
+  }
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.width-a-hundred-percent {
+  width: 100%;
+}
+
+.height-a-hundred-percent {
+  height: 100%;
+}
+
+@for $i from 0 through 10 {
+  $x: $i*5;
+
+  .mt-#{$x} {
+    margin-top: $x+px !important;
+  }
+
+  .mb-#{$x} {
+    margin-bottom: $x+px !important;
+  }
+
+  .ml-#{$x} {
+    margin-left: $x+px !important;
+  }
+
+  .mr-#{$x} {
+    margin-right: $x+px !important;
+  }
+
+  .pt-#{$x} {
+    padding-top: $x+px !important;
+  }
+
+  .pb-#{$x} {
+    padding-bottom: $x+px !important;
+  }
+
+  .pl-#{$x} {
+    padding-left: $x+px !important;
+  }
+
+  .pr-#{$x} {
+    padding-right: $x+px !important;
+  }
+}
+// flex
+.flex {
+  display: flex;
+}
+.flex-auto {
+  flex: auto;
+}
+
+@for $i from 1 through 5 { // flex-1 相当于 flex: 1;
+  .flex-#{$i} {
+    flex: $i
+  }
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-directive-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.border {
+  border: 1px solid #dcdfe6;
+}
+
+.border-l {
+  border-left: 1px solid #dcdfe6;
+}
+
+.border-r {
+  border-right: 1px solid #dcdfe6;
+}
+//自定义规则添加星号标志
+.task-depend{
+  .el-form-item__label:before{
+    content: '*';
+    color: #F56C6C;
+    margin-right: 4px;
+  }
+}
+.el-dialog__header { // 全局弹框样式
+  padding: 10px;
+  background-color: #1D77DE;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .el-dialog__title {
+    color: white;
+  }
+  .el-dialog__headerbtn {
+    top: auto;
+    color: white;
+    .el-dialog__close {
+      color: white;
+    }
+  }
+}
+.data-analysis-main-container {
+  .el-container {
+    .el-aside {
+      .el-menu-item, .el-sub-menu__title {
+        box-shadow: rgb(29 119 222 / 40%) 0px 0px 2px 0px;
+      }
+    }
+  }
+}
+// 全局card 的.el-card.is-always-shadow
+.el-card.is-always-shadow {
+  box-shadow: 0 0 6px 1px #f2f2f2;
+}
+
+

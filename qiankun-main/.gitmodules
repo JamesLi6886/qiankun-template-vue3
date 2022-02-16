@@ -1,0 +1,3 @@
+[submodule "common"]
+	path = common
+	url = http://lipengpeng1094:abc12345_@172.16.70.100:7002/data-platform-frontend-dev/common.git

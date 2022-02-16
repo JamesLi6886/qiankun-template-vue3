@@ -1,0 +1,69 @@
+{
+  "name": "home-page",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lint-fix": "eslint --fix --ext .js --ext .vue src/",
+    "common-add": "git subtree add --prefix=common http://172.16.70.100:7002/data-platform-frontend-dev/common.git master --squash",
+    "common-pull": "git subtree pull --prefix=common http://172.16.70.100:7002/data-platform-frontend-dev/common.git master --squash",
+    "common-push": "git subtree push --prefix=common http://172.16.70.100:7002/data-platform-frontend-dev/common.git master",
+    "config-npm": "npm config set registry http://192.168.25.22:8081/repository/npm-group"
+  },
+  "dependencies": {
+    "@antv/g2plot": "^2.4.4",
+    "@vueuse/core": "^7.3.0",
+    "axios": "^0.21.4",
+    "core-js": "^3.6.5",
+    "echarts": "^5.2.0",
+    "element-plus": "^1.1.0-beta.8",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "vue": "^3.0.0",
+    "vue-axios": "^3.2.5",
+    "vue-class-component": "^8.0.0-0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^7.20.0",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
+    "prettier": "^2.2.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "typescript": "~4.1.5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "rules": {
+    "vue/require-v-for-key": "off"
+  }
+}
